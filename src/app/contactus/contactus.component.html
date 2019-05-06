@@ -1,0 +1,88 @@
+<div class="page">
+
+  <!--=============================== Header ===========================-->
+  <div id="header"></div>
+
+  <!--=============================== Menu-Bar ========================-->
+  <div id="menuBar-charity"></div>
+
+  <!--=============================== Banner ==========================-->
+  <div class="banner">
+      <div class="shadow-main">
+          <ul class="breadcrumb breadcrumb-news">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <!--=============================== Contact ================================-->
+  <div class="main-contact">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12 mb-contact">
+                  <ul class="contact">
+                      <li>
+                          <strong>Location</strong>
+                          <span>Florida 123 6th St. Melbourne, FL 32904</span>
+                      </li>
+                      <li>
+                          <strong>Work Hours</strong>
+                          <span>Mon - Sat 10.00 - 18.00</span>
+                      </li>
+                      <li>
+                          <strong>Phone</strong>
+                          <span>800-879-6497, 321-879-8794</span>
+                      </li>
+                      <li>
+                          <strong>Say Hello</strong>
+                          <span>thx@yoursite.com</span>
+                      </li>
+                  </ul>
+                  <div class="contact-social-link">
+                      <ul>
+                          <li><a href="https://www.tumblr.com/"><i class="icon-tumblr "></i></a></li>
+                          <li><a href="https://www.facebook.com/"><i class="icon-facebook "></i></a></li>
+                          <li><a href="https://www.pinterest.com/"><i class="icon-pinterest "></i></a></li>
+                          <li><a href="https://vimeo.com/"><i class="icon-vimeo "></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                  <div class="leave-reply">
+                      <form action="..."  #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)">
+                          <div class="form-group">
+                              <input id="first_name"  name="name" #name="ngModel" [(ngModel)]="log.name" type="text" placeholder="Name"
+                                     class="form-control" required="">
+                          </div>
+                          <div class="form-group">
+                              <input id="email" name="email"  #email="ngModel" [(ngModel)]="log.email" type="email" placeholder="E-mail"
+                                     class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <input id="text"  type="text" name="subject" #subject="ngModel" [(ngModel)]="log.subject" placeholder="Subject"
+                                     class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <input id="text" type="number" name="mobile" #mobile="ngModel" [(ngModel)]="log.mobile" placeholder="Number"
+                                   class="form-control">
+                        </div>
+                          <div class="form-group">
+                              <textarea class="form-control" rows="6" name="message" #message="ngModel" [(ngModel)]="log.message" placeholder="Message..."></textarea>
+                          </div>
+                          <input class="red-btn red-btn-form"   (click)='OnSubmit(userRegistrationForm)' [disabled]="!userRegistrationForm.form.valid" type="submit" value="Send Message">
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div> <!--  /.container -->
+  </div> <!--  /.main-contact -->
+
+  <div class="overlay" onClick="style.pointerEvents='none'"></div>
+
+
+
+</div> <!--  /.page -->
+
+
+<app-footer></app-footer>

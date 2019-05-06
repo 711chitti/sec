@@ -1,0 +1,172 @@
+<div class="text">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!-- <div class="page"> -->
+
+ 
+
+  <div id="login-overlay" class="modal-dialog">
+    <div class="modal-content">
+         <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Create an Account</h4>
+           <!-- <p>Please Register to Shop at <b>Yael's Everything Store</b>.
+              You will instantly receive hundreds of amazing shopping deals,  
+              or go back to our <a href="./index.jsp">main site</a>.</p>-->
+          </div> 
+        
+          <div class="modal-body" id="registerForm">
+            
+          
+              <form  #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)" >
+<!---form--->           <div class="form-group">
+<!---input width--->    <div class="col-xs-6">
+                      <label for="InputName">Enter Name</label>
+                      <div class="input-group">
+                      <input type="text" class="form-control"  name="name" #name="ngModel" [(ngModel)]="log.name" placeholder="Enter Name" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                      </div>
+                      <br>
+                      <label for="InputName">Enter Mobile</label>
+                      <div class="input-group">
+                      <input type="text" class="form-control" name="mobile" #mobile="ngModel" [(ngModel)]="log.mobile" placeholder="Enter Mobile" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                  </div>
+<!--------------------------------------separator---------------------------------------------------------------> <hr>
+              </div>
+              </div>
+                  <div class="form-group">
+                  <div class="col-xs-6">
+
+                      <label for="InputName">Enter Email</label>
+                      <div class="input-group">
+                      <input type="text" class="form-control" name="email" #email="ngModel" [(ngModel)]="log.email" placeholder="Enter Email" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                      </div>
+                  
+                      <br>
+                      <label for="InputPassword">Enter Password</label>
+                      <div class="input-group">
+                      <input type="password" class="form-control" name="password" #password="ngModel" [(ngModel)]="log.password" placeholder="Enter Password" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                  </div>
+<!--------------------------------------separator---------------------------------------------------------------> <hr>
+              </div>       
+              </div> 
+              
+                  <div class="form-group"> 
+                      <div class="col-xs-12">
+                      <label for="InputEmail">Enter Blood Group</label>
+                      <div class="input-group">
+                      <input type="email" class="form-control"  name="blood_group" #blood_group="ngModel" [(ngModel)]="log.blood_group"   placeholder="Enter Blood Group" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                  </div>
+<!----------------------------break-------------------------------------------------------------> <br>
+                   </div>
+               </div>
+
+                      <div class="form-group">
+                      <div class="col-xs-12">
+                      <label for="InputStreetName">Enter Landline</label>
+                      <div class="input-group">
+                      <input type="text" class="form-control" name="street_name"  name="landline" #landline="ngModel" [(ngModel)]="log.landline" placeholder="Enter Landline" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                      </div>
+<!----------------------------break-------------------------------------------------------------> <br> 
+                  </div>                     
+              </div>
+           
+                      <div class="form-group">
+                      <div class="col-xs-12">
+                      <label for="InputCity"> Enter Occupation</label>
+                      <div class="input-group">
+                      <input type="text" class="form-control" name="city" name="occupation" #occupation="ngModel" [(ngModel)]="log.occupation"  placeholder="Enter Occupation" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                  </div>
+<!----------------------------break-------------------------------------------------------------> <br> 
+                  </div>
+                  </div>
+
+                      <div class="form-group">
+                      <div class="col-xs-12">
+                      <label for="InputProvince">Enter Country</label>
+                      <div class="input-group">
+                      <input type="text" class="form-control" name="province" name="country" #country="ngModel" [(ngModel)]="log.country"  placeholder="Enter Country" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span> 
+                  </div>
+<!----------------------------break-------------------------------------------------------------> <br>                     
+                 </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                <label for="InputProvince">Enter State </label>
+                <div class="input-group">
+                <input type="text" class="form-control"  name="state" #state="ngModel" [(ngModel)]="log.state"  placeholder="Enter State" required>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span> 
+            </div>
+<!----------------------------break-------------------------------------------------------------> <br>                     
+           </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-12">
+            <label for="InputProvince">Enter District</label>
+            <div class="input-group">
+            <input type="text" class="form-control" name="district" #district="ngModel" [(ngModel)]="log.district" placeholder="Enter District" required>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span> 
+        </div>
+<!----------------------------break-------------------------------------------------------------> <br>                     
+       </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-12">
+        <label for="InputProvince">Enter city </label>
+        <div class="input-group">
+        <input type="text" class="form-control"  name="city" #city="ngModel" [(ngModel)]="log.city"  placeholder="Enter City" required>
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span> 
+    </div>
+<!----------------------------break-------------------------------------------------------------> <br>                     
+   </div>
+</div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                      <label for="InputProvince">Enter Address</label>
+                      <div class="input-group">
+                      <input type="text" class="form-control" name="address" #address="ngModel" [(ngModel)]="log.address"   placeholder="Enter Address" required>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span> 
+                  </div>
+<!----------------------------break-------------------------------------------------------------> <br>                     
+                 </div>
+              </div>
+          
+
+            <select  class="form-control" name="is_available" #is_available="ngModel"  [(ngModel)]="selectedLevel4"
+                        >
+          
+                          <option   value="Available">Available</option>
+                          <option  value="Not Available">Not Available</option>
+            </select>
+
+
+
+
+    
+
+<!----------------------------break-------------------------------------------------------------> <br>                     
+           <!-- </div> -->
+       
+                <div class="form-group">
+                 <!-- <div class="input-group-addon"> 
+                <input type="submit" name="submit"  value="Submit"  [disabled]="!userRegistrationForm.form.valid" class="btn btn-success pull-right">
+                
+                </div>  -->
+                <div style="position:relative;"><input type="submit" class="btn btn-block btn_orange" [disabled]="!userRegistrationForm.form.valid" value="Submit" name="submit"> </div>
+              </div>
+              </form>
+              <div class="footer">
+                <span>Already a member? <a routerLink="login" class="log" (click)="login()">Login here </a></span>
+              </div>
+            </div><!---modal-body--->
+        </div>
+     </div>
+
+</div>
+
+<app-footer></app-footer>

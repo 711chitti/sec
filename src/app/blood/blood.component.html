@@ -1,0 +1,104 @@
+
+
+<!--=============================== Banner ==========================-->
+ <div class="banner">
+    <div class="shadow-main">
+        <ul class="breadcrumb breadcrumb-news">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+        </ul>
+    </div>
+</div> 
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="main">
+
+  <div class="container">
+      <div class="signup-content">
+          <div class="signup-img">
+              <img src="assets/blood/images/form-img.jpg" alt="">
+              <div class="signup-img-content">
+                  <h2>Register now </h2>
+                  <p>while seats are available !</p>
+              </div>
+          </div>
+          <div class="signup-form">
+              <form method="POST" class="register-form"  #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)"  id="register-form">
+                  <div class="form-row">
+                      <div class="form-group">
+                          <div class="form-input">
+                              <label for="first_name" class="required">Patient Name </label>
+                              <input type="text"  id="first_name" name="patient_name" #patient_name="ngModel" [(ngModel)]="log.patient_name"/>
+                          </div>
+                          <div class="form-input">
+                              <label for="last_name" class="required">Patient Blood</label>
+                              <input type="text"  id="last_name" name="patient_blood" #patient_blood="ngModel" [(ngModel)]="log.patient_blood" />
+                          </div>
+                          <div class="form-input">
+                              <label for="company" class="required">No_of_Units</label>
+                              <input type="text"  id="company" name="no_of_units" #no_of_units="ngModel" [(ngModel)]="log.no_of_units"/>
+                          </div>
+                          <div class="form-input">
+                              <label for="email" class="required">Landline</label>
+                              <input type="text"  id="email" name="landline" #landline="ngModel" [(ngModel)]="log.landline" />
+                          </div>
+                          <div class="form-input">
+                              <label for="phone_number" class="required">Hospital Name</label>
+                              <input type="text"  id="phone_number" name="hospital_name" #hospital_name="ngModel" [(ngModel)]="log.hospital_name" />
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="form-select">
+                             
+                              <div class="form-input">
+                                <label for="first_name" class="required">Patient Age</label>
+                                <input type="text"  id="first_name" name="patient_age" #patient_age="ngModel" [(ngModel)]="log.patient_age" />
+                            </div>
+                          </div>
+                          <div class="form-input">
+                            <label for="first_name" class="required">Date Need</label>
+                            <input type="text"  id="first_name" name="date_need" #date_need="ngModel" [(ngModel)]="log.date_need"/>
+                        </div>
+                          
+                          <div class="form-input">
+                              <label for="chequeno">Location</label>
+                              <input type="text"  id="chequeno" name="location" #location="ngModel" [(ngModel)]="log.location" />
+                          </div>
+                          <div class="form-input">
+                              <label for="blank_name">Patient Address</label>
+                              <input type="text"  id="blank_name" name="patient_address" #patient_address="ngModel" [(ngModel)]="log.patient_address" />
+                          </div>
+                          <div class="form-input">
+                              <label for="payable">Hospital Mobile</label>
+                              <input type="text" id="payable" name="hospital_mobile" #hospital_mobile="ngModel" [(ngModel)]="log.hospital_mobile" />
+                          </div>
+                      </div>
+                  </div>
+                  
+                      <div class="form-input">
+                        <label for="company" class="required">Hospital Address</label>
+                        <input type="text"  id="company" name="hospital_address" #hospital_address="ngModel" [(ngModel)]="log.hospital_address" />
+                    </div>
+                  
+                
+                <div class="form-input">
+                  <label for="company" class="required">Purpose</label>
+                  <input type="text"  id="company" name="purpose" #purpose="ngModel" [(ngModel)]="log.purpose"/>
+            </div>
+                  <div class="form-submit">
+                      <input type="submit" value="Submit" class="submit" id="submit"  (click)='OnSubmit(userRegistrationForm)' [disabled]="!userRegistrationForm.form.valid"name="submit" />
+                      <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+
+</div>

@@ -1,0 +1,45 @@
+.modal-content{
+    width:700px;
+    margin-left: -70px;
+}
+.form-control{
+    height:43px;
+    border: 1px solid #bdb4b4e3;
+    color:black;
+}
+
+#registerForm{
+    width: 608px;
+    margin-left: 40px;
+}
+h4{
+    text-align: center;
+}
+.text{
+    background-image:url('/assets/images/banner2.jpg');
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    form{
+        width: 354px;
+    }
+    h4 {
+        text-align: center;
+        margin-left: -240px;
+    }
+}
+
+
+ @media (min-width: 320px) and (max-width: 480px) {
+    form{
+        width: 354px;
+    }
+    h4 {
+        text-align: center;
+        margin-left: -240px;
+    }
+ }
+.log{
+    color:black;
+}

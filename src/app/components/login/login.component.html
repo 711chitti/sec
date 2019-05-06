@@ -1,0 +1,49 @@
+<div class="page">
+
+  <!--=============================== Header ===========================-->
+  <div id="header"></div>
+
+  <!--=============================== Menu-Bar ========================-->
+  <div id="menuBar-charity"></div>
+
+  <!--=============================== Banner ==========================-->
+   <div class="banner">
+      <div class="shadow-main">
+          <ul class="breadcrumb breadcrumb-news">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+          </ul>
+      </div>
+  </div> 
+  <!--========================== Login | Register =======================-->
+  <div class="main-contact">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+                  <div class="leave-reply">
+                      <div class="form-login">
+                          <h3>Login | Register </h3>
+                        
+                          <form class="login-form form-all" #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)">
+
+                              <h4>Login:</h4>
+                              <div class="form-group">
+                                  <input class="form-control" type="text" name="email" #email="ngModel" [(ngModel)]="log.email" placeholder="Email"/>
+                              </div>
+                              <div class="form-group">
+                                  <input class="form-control" type="password" name="password" #password="ngModel" [(ngModel)]="log.password" placeholder="Password"/>
+                              </div>
+                              <button class="red-btn red-btn-form btn-login"  (click)='OnSubmit(userRegistrationForm)' [disabled]="!userRegistrationForm.form.valid"  >Login</button>
+
+                              <p class="message">Not registered? <a routerLink="register" (click)="reg()">Create an account</a></p>
+                          </form>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--=============================== Footer ===========================-->
+  <app-footer></app-footer>

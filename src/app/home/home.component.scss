@@ -1,0 +1,145 @@
+.blood{
+    text-align: center;
+    color:white;
+    font-size: 18px;
+}
+.contactheading{
+    color:white;
+    font-size: 16px;
+}
+.findbloodlistmenu{
+    margin-left: 72px;
+
+}
+.don{
+width:85px;
+height:35px;
+}
+
+td{
+    padding:9px;
+}
+.table{
+    background-color:white;
+}
+
+.ttbb{
+    margin-top: 145px;
+}
+.ttxt{
+  border:1px solid #fc5800;
+  background-color: #fc5800;
+}
+.ttxt2:nth-child(even) {
+  background-color: #b98c74;
+}
+.ttxt, .ttxt1 {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+/* td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+
+hr {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .ttbb {
+        margin-top: 181px;
+       
+        margin-left: -36px;
+    }
+    .btn[_ngcontent-c2] {
+      float: right;
+      margin-right: 134px;
+      color: white;
+      width: 102px;
+      height: 40px;
+      background-color: #fc5800;
+  }
+  .title-text{
+    text-align: center;
+    margin-top: -93px;
+    color: black;
+  }
+    
+  }
+  
+  
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .ttbb {
+        margin-top: 181px;
+       
+        margin-left: -36px;
+    }
+    .btn[_ngcontent-c2] {
+      float: right;
+      margin-right: 134px;
+      color: white;
+      width: 102px;
+      height: 40px;
+      background-color: #fc5800;
+  }
+  .title-text{
+    text-align: center;
+    margin-top: -93px;
+    color: black;
+  }
+    
+  }
+
+
+#dpBloodGroup{
+  height: 25px;
+  width: 148px;
+}
+#dpCountry{
+    height: 25px;
+    width: 148px;
+  }
+  #dpState{
+    height: 25px;
+    width: 148px;
+  }
+  #dpDistrict{
+    height: 25px;
+    width: 148px;
+  }
+
+  #dpCity{
+    height: 25px;
+    width: 148px;
+  }
+  .title-text{
+    text-align: center;
+    margin-top: -93px;
+    
+  }
+  .btn{
+    float: right;
+    margin-right: 339px;
+    color: white;
+    width: 102px;
+    height: 40px;
+    background-color: #fc5800;
+  }
+  .event{
+    text-align: center;
+  }

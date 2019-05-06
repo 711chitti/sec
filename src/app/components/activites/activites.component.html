@@ -1,0 +1,23 @@
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<table class="table">
+    <thead>
+      <tr>
+        <!-- <th scope="col">Name</th> -->
+        <th scope="col">Blood</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">city</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of selectedLevel">
+        <!-- <td >{{item.name}}</td> -->
+        <td>{{item.blood_group}}</td>
+        <td>{{item.mobile}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.email}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
